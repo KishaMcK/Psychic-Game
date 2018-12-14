@@ -4,45 +4,35 @@
 <head>
     <title>Psychic-Game</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--BootStrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--JavaScript-->
+    <script type="text/javascript" src="assets\javascript\game.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xregexp/3.2.0/xregexp-all.js"></script>
 </head>
 
-<head>
-    <div id="setUp">
-        <h1>The Psychic Game</h1>
-        <h2>Guess what letter I'm thinking of!</h2>
-        <h3>Wins:</h3>
-        <h3>Losses:</h3>
-        <h3>Guesses Left:</h3>
-        <h3>Your Guesses so far:</h3>
-
+<body>
+    <div class="wrapper">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="jumbotron" id="jumtron">
+                    <h1>The Psychic Game</h1>
+                    <p class="startGame">Guess what letter I am thinking of! You can press any letter key to begin!</p>
+                </div>
+            </div>
+        </div>
     </div>
-    <script type="text/javascript">
-     
-    var computersChoices= ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
-    var options= 0;
-    var wins= 0;
-    var losses= 0;
-    var numGuesses= 9;
-    var guessChoices= [];
-
-    document.onkeyup= function (event) {
-        var userGuess = event.key;
-        var options= ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
-            
-            
-        }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    </script>
-</head>
+    <div class="row">
+        <div class="col-sm-12">
+            <div id="game">
+                    <img src="assets\images\kisspng-lakshmi-palmistry-astrology-school-numerology-5b4f4ebb1e9424.4486408215319241551253.png" alt="astrology map">
+                    <p id="game"></p>
+            </div>
+        </div>
+    </div>
+ 
+</body>
 
 </html>
